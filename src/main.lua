@@ -11,9 +11,9 @@ local config do
 	config = loadedConfig
 end
 
-local _JALON_EXECUTOR_INTERNAL do
-	_JALON_EXECUTOR_INTERNAL = {}
-	getfenv()._JALON_EXECUTOR_INTERNAL = _JALON_EXECUTOR_INTERNAL
+local _TORI_EXECUTOR_INTERNAL do
+	_TORI_EXECUTOR_INTERNAL = {}
+	getfenv()._TORI_EXECUTOR_INTERNAL = _TORI_EXECUTOR_INTERNAL
 end
 
 -- services
@@ -29,12 +29,12 @@ local highlighterLib = import("src/utils/syntax-highlight.lua")()
 -- objects
 -- ui objects
 local GUI = import("src/ui/executor.lua")()
-_JALON_EXECUTOR_INTERNAL.Executor = GUI
+_TORI_EXECUTOR_INTERNAL.Executor = GUI
 
 local MainUI = GUI.MainUI
 
 local Templates = import("src/ui/templates.lua")()
-_JALON_EXECUTOR_INTERNAL.Templates = Templates
+_TORI_EXECUTOR_INTERNAL.Templates = Templates
 
 local TabObjectLib = import("src/utils/tab-object.lua")()
 local MsgBoxTemplates = Templates.MessageBox
