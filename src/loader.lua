@@ -1,6 +1,6 @@
 -- config
-local repoName = "executor-gui"
-local repoOwner = "jLn0n"
+local repoName = "AzureWare"
+local repoOwner = "Tori"
 -- variables
 local http_request = (syn and syn.request) or (http and http.request) or request or http_request
 local wrapperEnv = {}
@@ -87,7 +87,7 @@ end
 end--]]
 -- main
 do -- environment init
-	wrapperEnv["USING_JALON_LOADER"] = true
+	wrapperEnv["USING_TORI_LOADER"] = true
 	wrapperEnv["import"] = import
 	wrapperEnv["fetchFile"] = fetchFile
 	--wrapperEnv["loadAsset"] = loadAsset
