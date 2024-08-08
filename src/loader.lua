@@ -1,6 +1,6 @@
 -- config
-local repoName = "AzureWare"
-local repoOwner = "Tori"
+local repoName = "Executor.v2"
+local repoOwner = "ToriTreat"
 -- variables
 local http_request = (syn and syn.request) or (http and http.request) or request or http_request
 local wrapperEnv = {}
